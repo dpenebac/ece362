@@ -508,3 +508,319 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 
 !ENTRY org.eclipse.cdt.core 1 0 2022-01-17 10:57:07.474
 !MESSAGE Indexed 'lab1' (26 sources, 82 headers) in 2.12 sec: 5,897 declarations; 20,451 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-01-17 11:09:38.218
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-01-17 11:09:38.219
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY fr.ac6.mcu.debug 4 5012 2022-01-17 11:14:51.394
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+load "C:\\Users\\Dorien Penebacker\\workspace\\lab1\\Debug\\lab1.elf" 
+
+Error message from debugger back end:
+Error erasing flash with vFlashErase packet
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:111)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launchDebugSession(MCUGDBJtagDSFLaunchConfigurationDelegate.java:281)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:319)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.Exception: Error erasing flash with vFlashErase packet
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-01-17 11:14:51.395
+!MESSAGE Failed to execute MI command:
+load "C:\\Users\\Dorien Penebacker\\workspace\\lab1\\Debug\\lab1.elf" 
+
+Error message from debugger back end:
+Error erasing flash with vFlashErase packet
+!STACK 0
+java.lang.Exception: Error erasing flash with vFlashErase packet
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY fr.ac6.mcu.debug 4 5012 2022-01-17 11:15:39.980
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+load "C:\\Users\\Dorien Penebacker\\workspace\\lab1\\Debug\\lab1.elf" 
+
+Error message from debugger back end:
+Error erasing flash with vFlashErase packet
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:111)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launchDebugSession(MCUGDBJtagDSFLaunchConfigurationDelegate.java:281)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:319)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.Exception: Error erasing flash with vFlashErase packet
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-01-17 11:15:39.980
+!MESSAGE Failed to execute MI command:
+load "C:\\Users\\Dorien Penebacker\\workspace\\lab1\\Debug\\lab1.elf" 
+
+Error message from debugger back end:
+Error erasing flash with vFlashErase packet
+!STACK 0
+java.lang.Exception: Error erasing flash with vFlashErase packet
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-01-17 11:24:37.389
+!MESSAGE Connection to http://download.eclipse.org/technology/epp/packages/neon/p2.index failed on Received fatal alert: handshake_failure. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: Received fatal alert: handshake_failure
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:154)
+	at sun.security.ssl.SSLSocketImpl.recvAlert(SSLSocketImpl.java:2033)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1135)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.writeRecord(SSLSocketImpl.java:757)
+	at sun.security.ssl.AppOutputStream.write(AppOutputStream.java:123)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flushBuffer(AbstractSessionOutputBuffer.java:159)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flush(AbstractSessionOutputBuffer.java:166)
+	at org.apache.http.impl.AbstractHttpClientConnection.doFlush(AbstractHttpClientConnection.java:272)
+	at org.apache.http.impl.AbstractHttpClientConnection.flush(AbstractHttpClientConnection.java:277)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.flush(AbstractClientConnAdapter.java:201)
+	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:239)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2022-01-17 11:24:40.915
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/technology/epp/packages/neon/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:340)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:239)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:396)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:199)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2022-01-17 11:24:40.916
+!MESSAGE No repository found at http://download.eclipse.org/technology/epp/packages/neon/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2022-01-17 11:24:40.923
+!MESSAGE Unable to read repository at http://download.eclipse.org/releases/neon.
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/technology/epp/packages/neon/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:340)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:239)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:396)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:199)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2022-01-17 11:24:40.924
+!MESSAGE No repository found at http://download.eclipse.org/technology/epp/packages/neon/.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-01-17 11:24:47.657
+!MESSAGE Connection to http://download.eclipse.org/technology/epp/packages/neon/p2.index failed on Received fatal alert: handshake_failure. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: Received fatal alert: handshake_failure
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:154)
+	at sun.security.ssl.SSLSocketImpl.recvAlert(SSLSocketImpl.java:2033)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1135)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.writeRecord(SSLSocketImpl.java:757)
+	at sun.security.ssl.AppOutputStream.write(AppOutputStream.java:123)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flushBuffer(AbstractSessionOutputBuffer.java:159)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flush(AbstractSessionOutputBuffer.java:166)
+	at org.apache.http.impl.AbstractHttpClientConnection.doFlush(AbstractHttpClientConnection.java:272)
+	at org.apache.http.impl.AbstractHttpClientConnection.flush(AbstractHttpClientConnection.java:277)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.flush(AbstractClientConnAdapter.java:201)
+	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:239)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2022-01-17 11:24:51.425
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/technology/epp/packages/neon/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:340)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:239)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor112.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:396)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:199)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.loadMetadataRepository(ProvisioningContext.java:211)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedMetadataRepositories(ProvisioningContext.java:194)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getMetadata(ProvisioningContext.java:275)
+	at org.eclipse.equinox.internal.p2.director.SimplePlanner.updatesFor(SimplePlanner.java:784)
+	at org.eclipse.equinox.p2.operations.UpdateOperation.updatesFor(UpdateOperation.java:142)
+	at org.eclipse.equinox.p2.operations.UpdateOperation.computeProfileChangeRequest(UpdateOperation.java:179)
+	at org.eclipse.equinox.p2.operations.UpdateOperation$1.run(UpdateOperation.java:323)
+	at org.eclipse.equinox.internal.p2.operations.SearchForUpdatesResolutionJob.runModal(SearchForUpdatesResolutionJob.java:37)
+	at org.eclipse.equinox.p2.operations.ProfileChangeOperation.resolveModal(ProfileChangeOperation.java:115)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:111)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:92)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2022-01-17 11:24:51.425
+!MESSAGE No repository found at http://download.eclipse.org/technology/epp/packages/neon/.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-01-17 11:24:52.349
+!MESSAGE Connection to http://download.eclipse.org/technology/epp/packages/neon/p2.index failed on Received fatal alert: handshake_failure. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: Received fatal alert: handshake_failure
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:154)
+	at sun.security.ssl.SSLSocketImpl.recvAlert(SSLSocketImpl.java:2033)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1135)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.writeRecord(SSLSocketImpl.java:757)
+	at sun.security.ssl.AppOutputStream.write(AppOutputStream.java:123)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flushBuffer(AbstractSessionOutputBuffer.java:159)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flush(AbstractSessionOutputBuffer.java:166)
+	at org.apache.http.impl.AbstractHttpClientConnection.doFlush(AbstractHttpClientConnection.java:272)
+	at org.apache.http.impl.AbstractHttpClientConnection.flush(AbstractHttpClientConnection.java:277)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.flush(AbstractClientConnAdapter.java:201)
+	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:239)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2022-01-17 11:24:55.888
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/technology/epp/packages/neon/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:340)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:239)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor112.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:396)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:199)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.loadMetadataRepository(ProvisioningContext.java:211)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedMetadataRepositories(ProvisioningContext.java:194)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getMetadata(ProvisioningContext.java:275)
+	at org.eclipse.equinox.internal.p2.director.SimplePlanner.gatherAvailableInstallableUnits(SimplePlanner.java:267)
+	at org.eclipse.equinox.internal.p2.director.SimplePlanner.getSolutionFor(SimplePlanner.java:328)
+	at org.eclipse.equinox.internal.p2.director.SimplePlanner.getProvisioningPlan(SimplePlanner.java:387)
+	at org.eclipse.equinox.internal.p2.operations.PlannerResolutionJob.runModal(PlannerResolutionJob.java:76)
+	at org.eclipse.equinox.internal.p2.operations.SearchForUpdatesResolutionJob.runModal(SearchForUpdatesResolutionJob.java:46)
+	at org.eclipse.equinox.p2.operations.ProfileChangeOperation.resolveModal(ProfileChangeOperation.java:115)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:111)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:92)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.updatesAvailable(AutomaticUpdateScheduler.java:146)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:79)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2022-01-17 11:24:55.889
+!MESSAGE No repository found at http://download.eclipse.org/technology/epp/packages/neon/.
