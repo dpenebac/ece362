@@ -1,0 +1,23 @@
+16:22:40 **** Incremental Build of configuration Debug for project lab2 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/dpenebac/workspace/lab2/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/dpenebac/workspace/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/dpenebac/workspace/lab2/inc" -I"/home/shay/a/dpenebac/workspace/lab2/CMSIS/device" -I"/home/shay/a/dpenebac/workspace/lab2/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/dpenebac/workspace/lab2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2.elf" @"objects.list" /home/shay/a/dpenebac/workspace/lab2/src/autotest.o  -lm
+Finished building target: lab2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab2.elf" "lab2.bin"
+arm-none-eabi-size "lab2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  45360	   2708	   1168	  49236	   c054	lab2.elf
+ 
+
+16:22:40 Build Finished (took 311ms)
+

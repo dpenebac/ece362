@@ -1,0 +1,9 @@
+.cpu cortex-m0
+.thumb
+.syntax unified
+.fpu softvfp
+
+.text
+.global main
+main:
+	movs r1, #1

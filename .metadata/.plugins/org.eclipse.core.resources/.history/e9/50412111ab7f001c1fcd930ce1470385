@@ -1,0 +1,39 @@
+.cpu cortex-m0
+.thumb
+.syntax unified
+.fpu softvfp
+
+.data
+.balign 4
+// Your global variables go here
+
+
+.text
+.global intsub
+intsub:
+    // Your code for intsub goes here
+
+    // You must terminate your subroutine with bx lr
+    // unless you know how to use PUSH and POP.
+    bx lr
+
+
+
+.global charsub
+charsub:
+    // Your code for charsub goes here
+
+    // You must terminate your subroutine with bx lr
+    // unless you know how to use PUSH and POP.
+    bx lr
+
+
+.global login
+login: .string "dpenebac" // Make sure you put your login here.
+.balign 2
+.global main
+main:
+    //bl autotest // uncomment AFTER you debug your subroutines
+    bl intsub
+    bl charsub
+    bkpt

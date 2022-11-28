@@ -1,0 +1,14 @@
+.cpu cortex-m0
+.thumb
+.syntax unified
+.fpu softvfp
+
+.data
+.balign 4
+// Your global variables go here
+
+
+.global main
+main:
+	movs r1, #1
+	bkpt

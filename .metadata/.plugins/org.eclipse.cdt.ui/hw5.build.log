@@ -1,0 +1,23 @@
+23:00:45 **** Incremental Build of configuration Debug for project hw5 ****
+make -j16 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/dpenebac/workspace/hw5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/dpenebac/workspace/hw5/StdPeriph_Driver/inc" -I"/home/shay/a/dpenebac/workspace/hw5/inc" -I"/home/shay/a/dpenebac/workspace/hw5/CMSIS/device" -I"/home/shay/a/dpenebac/workspace/hw5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: hw5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/dpenebac/workspace/hw5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw5.elf" @"objects.list"   -lm
+Finished building target: hw5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "hw5.elf" "hw5.bin"
+arm-none-eabi-size "hw5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3656	   1080	   1092	   5828	   16c4	hw5.elf
+ 
+
+23:00:46 Build Finished (took 263ms)
+
